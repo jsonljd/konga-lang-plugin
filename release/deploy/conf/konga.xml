@@ -1,0 +1,1407 @@
+<?xml version="1.0"?>
+<root>
+    <file>
+        <name>js/app/dashboard/dashboard.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Welcome!$]]></target>
+                <expect><![CDATA[欢迎!]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[No active connection to Kong Admin was found.]]></target>
+                <expect><![CDATA[没有可用的Kong管理连接.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Activate one from the <a ui-sref="connections">Connections</a> page.]]></target>
+                <expect><![CDATA[立即设置 <a ui-sref="connections">连接管理</a> 页面.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[First of all, lets setup a connection to Kong Admin.]]></target>
+                <expect><![CDATA[首先,设置一个Kong的管理端]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Select a connection type.]]></target>
+                <expect><![CDATA[选择一种连接方式.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Something went wrong...]]></target>
+                <expect><![CDATA[出现一些错误...]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Failed to connect to ]]></target>
+                <expect><![CDATA[无法连接]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Make sure your active <a ui-sref="connections">connection</a> is valid and Kong is up and running.]]></target>
+                <expect><![CDATA[请确认 <a ui-sref="connections">连接管理</a> 设置有可用的Kong并且是运行中.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+CONNECTIONS$]]></target>
+                <expect><![CDATA[连接端]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Total Requests: ]]></target>
+                <expect><![CDATA[总请求: ]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<strong>ACTIVE</strong>]]></target>
+                <expect><![CDATA[<strong>可用的</strong>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<strong>READING</strong>]]></target>
+                <expect><![CDATA[<strong>读取中</strong>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<strong>WRITING</strong>]]></target>
+                <expect><![CDATA[<strong>写入中</strong>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<strong>WAITING</strong>]]></target>
+                <expect><![CDATA[<strong>等待中</strong>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<strong>ACCEPTED</strong>]]></target>
+                <expect><![CDATA[<strong>已接受</strong>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<strong>HANDLED</strong>]]></target>
+                <expect><![CDATA[<strong>已处理</strong>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+DATABASE$]]></target>
+                <expect><![CDATA[数据库]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[&nbsp;NODE INFO$]]></target>
+                <expect><![CDATA[&nbsp;节点信息]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>HostName</th>]]></target>
+                <expect><![CDATA[<th>主机名</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Tag Line</th>]]></target>
+                <expect><![CDATA[<th>基 线</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Version</th>]]></target>
+                <expect><![CDATA[<th>版本号</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>LUA Version</th>]]></target>
+                <expect><![CDATA[<th>LUA版本</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Admin listen</th>]]></target>
+                <expect><![CDATA[<th>管理监听</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+TIMERS$]]></target>
+                <expect><![CDATA[时序]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[DATASTORE INFO$]]></target>
+                <expect><![CDATA[存储信息]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Host</th>]]></target>
+                <expect><![CDATA[<th>主机</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Contact points</th>]]></target>
+                <expect><![CDATA[<th>通讯节点</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Keyspace</th>]]></target>
+                <expect><![CDATA[<th>键空间</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Data Centers</th>]]></target>
+                <expect><![CDATA[<th>数据中心</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Database</th>]]></target>
+                <expect><![CDATA[<th>数据库</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>User</th>]]></target>
+                <expect><![CDATA[<th>用户</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Username</th>]]></target>
+                <expect><![CDATA[<th>用户名</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<th>Port</th>]]></target>
+                <expect><![CDATA[<th>端口</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+PLUGINS$]]></target>
+                <expect><![CDATA[插件]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+CLUSTER \(\{\{clusters.total\}\} nodes\)&]]></target>
+                <expect><![CDATA[集群有 ({{clusters.total}} 节点数)]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/connections/partials/create-connection-form.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+DEFAULT$]]></target>
+                <expect>默认</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+KEY AUTH$]]></target>
+                <expect>键值授权</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+JWT AUTH$]]></target>
+                <expect>JWT授权</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/apis/partials/form-api-09.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[>Name <br>]]></target>
+                <expect><![CDATA[>名称 <br>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>optional<]]></target>
+                <expect><![CDATA[>选项<]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[The API name. If none is specified, will default to the <code>request_host</code> or <code>request_path</code>.]]></target>
+                <expect><![CDATA[API名称. 如果没有特殊, 默认为 <code>请求域名</code> 或者 <code>请求路径</code>.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Request Host$]]></target>
+                <expect><![CDATA[>请求域名]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>semi-optional<]]></target>
+                <expect><![CDATA[>半选项<]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[The public DNS address that points to your API. For example, <code>mockbin.com</code>. At least <code>request_host</code> or <code>request_path</code> or both should be specified.]]></target>
+                <expect><![CDATA[如果DNS地址指向你的API地址. 譬如, <code>mockbin.com</code>. 至少 <code>请求域名</code> 或者 <code>请求路径</code> 或者两者都指向.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Request Path$]]></target>
+                <expect><![CDATA[>请求路径]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[The public path that points to your API. For example, <code>/someservice</code>. At least <code>request_host</code> or <code>request_path</code> or both should be specified.]]></target>
+                <expect><![CDATA[如果路径地址指向你的API地址. 譬如, <code>/someservice</code>. 至少 <code>请求域名</code> 或者 <code>请求路径</code> 或者两者都指向.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Strip Request Path$]]></target>
+                <expect><![CDATA[>请求路径目录]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Strip the request_path value before proxying the request to the final API. For example a request made to <code>/someservice/hello</code> will be resolved to <code>upstream_url/hello</code>. By default is false.]]></target>
+                <expect><![CDATA[请求路径目录在代理的最终请求API之前. 譬如需要请求 <code>/someservice/hello</code> 将被解析成 <code>upstream_url/hello</code>. 默认是否.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Preserve Host$]]></target>
+                <expect><![CDATA[>保留域名]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Preserves the original <code>Host</code> header sent by the client, instead of replacing it with the <code>hostname</code> of the <code>upstream_url</code>. By default is false.]]></target>
+                <expect><![CDATA[保留原 <code>Host</code> 主机头发送到客户端, 替换为 <code>hostname</code> 主机名 <code>upstream_url</code>. 默认是否.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Upstream URL<]]></target>
+                <expect><![CDATA[>上行流URL<]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[The base target URL that points to your API server, this URL will be used for proxying requests. For example, <code>https://mockbin.com</code>.]]></target>
+                <expect><![CDATA[基础的目的地URL指向你的API服务器, URL将采用代理请求转发. 譬如, <code>https://mockbin.com</code>.]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/apis/partials/form-api-010.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[>Name <br>]]></target>
+                <expect><![CDATA[>名称 <br>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>optional<]]></target>
+                <expect><![CDATA[>选项<]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[The API name. If none is specified, will default to the <code>request_host</code> or <code>request_path</code>.]]></target>
+                <expect><![CDATA[API名称. 如果没有特殊, 默认为 <code>请求域名</code> 或者 <code>请求路径</code>.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Hosts <br>]]></target>
+                <expect><![CDATA[>主机名 <br>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>semi-optional<]]></target>
+                <expect><![CDATA[>半选项<]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[A comma-separated list of domain names that point to your API. For example: <code>example.com</code>. At least one of <code>hosts</code>, <code>uris</code>, or <code>methods</code> should be specified.]]></target>
+                <expect><![CDATA[指向您的API的域名的逗号分隔列表。例如：<code>example.com</code>。应至少指定<code>主机</code>、<code>uri</code>或<code>方法</code>中的一个。.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[A comma-separated list of URIs prefixes that point to your API. For example: <code>/my-path</code>. At least one of <code>hosts</code>, <code>uris</code>, or <code>methods</code> should be specified.]]></target>
+                <expect><![CDATA[指向API的uri前缀的逗号分隔列表。例如：<code>/my path</code>。应至少指定<code>主机</code>、<code>uri</code>或<code>方法</code>中的一个。]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[A comma-separated list of HTTP methods that point to your API. For example: <code>GET</code>,<code>POST</code>. At least one of <code>hosts</code>, <code>uris</code>, or <code>methods</code> should be specified.]]></target>
+                <expect><![CDATA[指向API的HTTP方法的逗号分隔列表。例如：<code>GET</code>，<code>POST</code>。应至少指定<code>主机</code>、<code>uri</code>或<code>方法</code>中的一个。]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/connections/partials/create-connection-form-flat.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+DEFAULT$]]></target>
+                <expect>默认</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+KEY AUTH$]]></target>
+                <expect>键值授权</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+JWT AUTH$]]></target>
+                <expect>JWT授权</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Checking Connection]]></target>
+                <expect>检查连接中</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Creating]]></target>
+                <expect>创建中</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[create connection]]></target>
+                <expect>创建连接</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/core/layout/partials/header.html</name>
+        <item>
+            <replace>
+                <target>Toggle navigation</target>
+                <expect>导航</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Hello,]]></target>
+                <expect><![CDATA[你好,]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[\"auth.login\"\>Login\<\/a\>]]></target>
+                <expect><![CDATA["auth.login">登录</a>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[There are no notifications at this point...]]></target>
+                <expect><![CDATA[没有相关的消息...]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Profile$]]></target>
+                <expect><![CDATA[基本信息]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Users$]]></target>
+                <expect><![CDATA[用户信息]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Settings$]]></target>
+                <expect><![CDATA[系统设置]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Logout$]]></target>
+                <expect><![CDATA[安全退出]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/core/layout/01_layout-controllers.js</name>
+        <item>
+            <replace>
+                <target><![CDATA[title: 'Dashboard',]]></target>
+                <expect><![CDATA[title: '仪表概览',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'API Gateway',]]></target>
+                <expect><![CDATA[title: '网关配置',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Info',]]></target>
+                <expect><![CDATA[title: '信息管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Services',]]></target>
+                <expect><![CDATA[title: '服务管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Routes',]]></target>
+                <expect><![CDATA[title: '路由管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Consumers',]]></target>
+                <expect><![CDATA[title: '消费者管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Plugins',]]></target>
+                <expect><![CDATA[title: '插件管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Upstreams',]]></target>
+                <expect><![CDATA[title: '流量管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Certificates',]]></target>
+                <expect><![CDATA[title: '证书管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Application',]]></target>
+                <expect><![CDATA[title: '应用设置',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Users',]]></target>
+                <expect><![CDATA[title: '用户管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Connections',]]></target>
+                <expect><![CDATA[title: '连接管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Snapshots',]]></target>
+                <expect><![CDATA[title: '镜像管理',]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[title: 'Settings',]]></target>
+                <expect><![CDATA[title: '系统设置',]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/certificates/00_certificates.js</name>
+        <item>
+            <replace>
+                <target>pageName : "Certificates",</target>
+                <expect>pageName : "证书管理",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription : "A certificate object represents a public certificate/private key pair for an SSL certificate. These objects are used by Kong to handle SSL/TLS termination for encrypted requests. Certificates are optionally associated with SNI objects to tie a cert/key pair to one or more hostnames.",</target>
+                <expect>pageDescription : "证书对象表示SSL证书的公共证书/私钥对。Kong使用这些对象来处理加密请求的SSL/TLS终止。证书可以选择与SNI对象关联，以将证书/密钥对绑定到一个或多个主机名。",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/apis/00_apis.js</name>
+        <item>
+            <replace>
+                <target>pageDescription: "The API object describes an API that's being exposed by Kong. Kong needs to know how to retrieve the API when a consumer is calling it from the Proxy port. Each API object must specify a request host, a request path or both. Kong will proxy all requests to the API to the specified upstream URL.",</target>
+                <expect>pageDescription: "API对象描述了Kong正在公开的API。当消费者从代理端口调用API时，Kong需要知道如何检索它。每个API对象必须指定请求主机、请求路径或两者。Kong将把对API的所有请求代理到指定的上游URL。",</expect>
+            </replace>
+            <replace>
+                <target>pageName: "Edit API",</target>
+                <expect>pageName: "编辑API",</expect>
+            </replace>
+            <replace>
+                <target>displayName: "edit API",</target>
+                <expect>displayName: "编辑API",</expect>
+            </replace>
+            <replace>
+                <target>pageName: "API Plugins",</target>
+                <expect>pageName: "API插件",</expect>
+            </replace>
+            <replace>
+                <target>pageName: "Manage API Plugins",</target>
+                <expect>pageName: "管理API插件",</expect>
+            </replace>
+            <replace>
+                <target>displayName: "manage"</target>
+                <expect>displayName: "管理"</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/users/00_users.js</name>
+        <item>
+            <replace>
+                <target>pageName : "Users",</target>
+                <expect>pageName : "用户管理",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription : "Manage Konga users and user roles"</target>
+                <expect>pageDescription : "管理Konga用户及用户角色"</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/upstreams/01_upstreams.js</name>
+        <item>
+            <replace>
+                <target>pageName : "Upstreams",</target>
+                <expect>pageName : "上游管理",</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[pageDescription : "The upstream object represents a virtual hostname and can be used to loadbalance incoming requests over multiple services (targets). So for example an upstream named <code>service.v1.xyz</code> with an API object created with an <code>upstream_url=https://service.v1.xyz/some/path</code>. Requests for this API would be proxied to the targets defined within the upstream.",]]></target>
+                <expect>pageDescription : "upstream对象表示虚拟主机名，可用于在多个服务（目标）上加载平衡传入请求。例如，一个名为<code>service.v1.xyz</code>的上游，其API对象是用一个<code>upstream_url=https://service.v1.xyz/some/path</code>创建的。对这个API的请求将被代理到上游中定义的目标。",</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[pageName : "Edit Upstream",]]></target>
+                <expect><![CDATA[pageName : "编辑上游",]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/users/index.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Create User$]]></target>
+                <expect><![CDATA[创建用户]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/connections/index.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+new connection$]]></target>
+                <expect><![CDATA[新增连接]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/users/user.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Save$]]></target>
+                <expect><![CDATA[保存]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Cancel$]]></target>
+                <expect><![CDATA[取消]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Edit$]]></target>
+                <expect><![CDATA[编辑]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Delete$]]></target>
+                <expect><![CDATA[删除]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Info$]]></target>
+                <expect><![CDATA[信息]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+\<th\>Username\<\/th\>$]]></target>
+                <expect><![CDATA[<th>用户名</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+\<th\>First Name\<\/th\>$]]></target>
+                <expect><![CDATA[<th>名字</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+\<th\>Last Name\<\/th\>$]]></target>
+                <expect><![CDATA[<th>姓氏</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+\<th\>Email\<\/th\>$]]></target>
+                <expect><![CDATA[<th>邮箱</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+\<th\>Active connection\<\/th\>$]]></target>
+                <expect><![CDATA[<th>是否在线</th>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Is this user active?]]></target>
+                <expect><![CDATA[用户账号是否可用]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Is this user an administrator?]]></target>
+                <expect><![CDATA[用户账号是否管理员]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/cluster/00_cluster.js</name>
+        <item>
+            <replace>
+                <target>pageName : "Cluster",</target>
+                <expect>pageName : "集群",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/consumers/00_consumers.js</name>
+        <item>
+            <replace>
+                <target>pageName: "Consumers",</target>
+                <expect>pageName: "消费者管理",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription: "The Consumer object represents a consumer - or a user - of an API. You can either rely on Kong as the primary datastore, or you can map the consumer list with your database to keep consistency between Kong and your existing primary datastore.",</target>
+                <expect>pageDescription: "Consumer对象表示API的使用者或用户。您可以将Kong作为主数据存储，也可以将使用者列表与数据库映射，以保持Kong与现有主数据存储之间的一致性。",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/consumers/index.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Create consumer$]]></target>
+                <expect><![CDATA[创建消费者]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/plugins/plugins.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Add global plugins$]]></target>
+                <expect><![CDATA[添加全局插件]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/upstreams/index.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Create upstream$]]></target>
+                <expect><![CDATA[创建上游]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/certificates/certificates.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Add Certificate$]]></target>
+                <expect><![CDATA[添加证书]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/healthchecks/00_healthchecks.js</name>
+        <item>
+            <replace>
+                <target>pageName: "Health Checks",</target>
+                <expect>pageName: "健康检查",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription: "Manage API healthchecks",</target>
+                <expect>pageDescription: "管理API接口的健康检查点",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/info/00_info.js</name>
+        <item>
+            <replace>
+                <target>pageName : "Node Info",</target>
+                <expect>pageName : "节点信息管理",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription : "Generic details about the node",</target>
+                <expect>pageDescription : "有关节点的常规详细信息",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/plugins/00_plugins.js</name>
+        <item>
+            <replace>
+                <target>pageName: "Plugins",</target>
+                <expect>pageName: "插件管理",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription: "A Plugin entity represents a plugin configuration that will be executed during the HTTP request/response workflow, and it's how you can add functionalities to APIs that run behind Kong, like Authentication or Rate Limiting for example.",</target>
+                <expect>pageDescription: "插件实体表示将在HTTP请求/响应工作流期间执行的插件配置，以及如何向在Kong之后运行的api添加功能，例如身份验证或速率限制。",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/routes/00_routes.js</name>
+        <item>
+            <replace>
+                <target>pageName: "Routes",</target>
+                <expect>pageName: "路由管理",</expect>
+            </replace>
+            <replace>
+                <target>"The Route entities defines rules to match client requests. Each Route is associated with a Service, and a Service may have multiple Routes associated to it. Every request matching a given Route will be proxied to its associated Service.",</target>
+                <expect>"路由实体定义与客户端请求匹配的规则。每个路由都与一个服务相关联，并且一个服务可能有多个与之关联的路由。与给定路由匹配的每个请求都将被代理到其关联的服务。",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/services/00_services.js</name>
+        <item>
+            <replace>
+                <target>pageName: "Services",</target>
+                <expect>pageName: "服务节点管理",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription: "Service entities, as the name implies, are abstractions of each of your own upstream services. Examples of Services would be a data transformation microservice, a billing API, etc.",</target>
+                <expect>pageDescription: "服务实体，顾名思义，是每个上游服务的抽象。服务的例子包括数据转换微服务、计费API等。",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/connections/00_connections.js</name>
+        <item>
+            <replace>
+                <target>pageName : "Connections",</target>
+                <expect>pageName : "连接管理",</expect>
+            </replace>
+            <replace>
+                <target>pageDescription : "Create connections to Kong Nodes and activate the one you want use.",</target>
+                <expect>pageDescription : "创建配置Kong节点信息.",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/snapshots/00_snapshots.js</name>
+        <item>
+            <replace>
+                <target>pageName : "Snapshots",</target>
+                <expect>pageName : "配置镜像管理",</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[pageDescription : "Take snapshots of currently active nodes."]]></target>
+                <expect>pageDescription : "获取当前活动节点的快照."</expect>
+            </replace>
+            <replace>
+                <target>will be saved and available for later import.</target>
+                <expect>将被保存并可供以后导入。</expect>
+            </replace>
+            <replace>
+                <target>pageName : "Snapshot Details",</target>
+                <expect>pageName : "镜像明细",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/core/auth/login/login.html</name>
+        <item>
+            <replace>
+                <target>Sign in to continue</target>
+                <expect>登录后继续</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[placeholder="Username or Email"]]></target>
+                <expect><![CDATA[placeholder="用户名或邮箱"]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[placeholder="Password"]]></target>
+                <expect><![CDATA[placeholder="密码"]]></expect>
+            </replace>
+            <replace>
+                <target>Username or Email is required.</target>
+                <expect>请填入用户名或邮箱</expect>
+            </replace>
+            <replace>
+                <target>Password is required.</target>
+                <expect>请填入密码</expect>
+            </replace>
+            <replace>
+                <target>Don't have an account? </target>
+                <expect>是否没有账号?</expect>
+            </replace>
+            <replace>
+                <target>Sign up!</target>
+                <expect>注册!</expect>
+            </replace>
+            <replace>
+                <target>Sign in</target>
+                <expect>登 录</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/core/auth/signup/signup.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[>The$]]></target>
+                <expect><![CDATA[>请]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[username is required.</p>]]></target>
+                <expect><![CDATA[填入用户名.</p>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[required">The email]]></target>
+                <expect><![CDATA[required">请填入]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+is required.</p>$]]></target>
+                <expect><![CDATA[邮箱.</p>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>The email is]]></target>
+                <expect><![CDATA[>邮箱]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+invalid.</p>$]]></target>
+                <expect><![CDATA[非法.</p>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Password is required.</p>]]></target>
+                <expect><![CDATA[请填入密码.</p>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Password confirmation is required]]></target>
+                <expect><![CDATA[请再输入密码确认]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Password and password confirmation don't match.]]></target>
+                <expect><![CDATA[两次输入的密码不一致.]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+signup$]]></target>
+                <expect><![CDATA[注册]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/settings/01_settings.js</name>
+        <item>
+            <replace>
+                <target>pageName: "Settings",</target>
+                <expect>pageName: "设置",</expect>
+            </replace>
+            <replace>
+                <target>displayName: "settings",</target>
+                <expect>displayName: "设置",</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/core/auth/services/AuthService.js</name>
+        <item>
+            <replace>
+                <target>success\(\'You have logged in successfully\!\'\)\;</target>
+                <expect>success('登录成功!');</expect>
+            </replace>
+            <replace>
+                <target>success\(\'You have logged out\.\'\)\;</target>
+                <expect>success('安全退出!');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/apis/controllers/apis-controller.js</name>
+        <item>
+            <replace>
+                <target>success\(\'API Healthchecks reset successfully\!\'\)\;</target>
+                <expect>success('安全监测重置成功!');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/apis/controllers/api-health-checks-controller.js</name>
+        <item>
+            <replace>
+                <target>success\(\"Health Checks \" + \(\$scope\.apiHC\.active \? \'enabled\' \: \'disabled\'\) \+ \" \"\)</target>
+                <expect>success("安全监测 " + ($scope.apiHC.active ? '开启' : '禁止') + " ")</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\"API health checks updated\!\"\)</target>
+                <expect>MessageService.success("API安全监查更新!")</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/apis/controllers/api-details-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'API updated successfully\!\'\)</target>
+                <expect>MessageService.success('API更新成功!')</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/apis/controllers/add-api-modal-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Api created\!\'\)</target>
+                <expect>MessageService.success('Api创建成功!')</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/users/user-create-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'New user created successfully\'\)\;</target>
+                <expect>MessageService.success('新用户创建成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/users/user-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'User \"\' \+ \$scope\.user\.username \+ \'\" updated successfully\'\)\;</target>
+                <expect>MessageService.success('用户 "' + \$scope\.user\.username + '" 更新成功');</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\'User \"\' \+ \$scope\.user\.username \+ \'\" deleted successfully\'\)\;</target>
+                <expect>MessageService.success('用户 "' + \$scope\.user\.username + '" 删除成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/consumers/credentials/mass-assign-credentials-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Credentials where assigned successfully\!\'\)</target>
+                <expect>MessageService.success('凭据成功分配!')</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/consumers/credentials/consumer-credentials-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Credentials deleted successfully\'\)\;</target>
+                <expect>MessageService.success('凭据删除成功');</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\'OAuth2 deleted successfully\'\)\;</target>
+                <expect>MessageService.success('OAuth2授权删除成功');</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\'JWT deleted successfully\'\)\;</target>
+                <expect>MessageService.success('JWT授权删除成功');</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\'Key deleted successfully\'\)\;</target>
+                <expect>MessageService.success('关键字授权删除成功');</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\"Consumer updated successfully\!\"\)</target>
+                <expect>MessageService.success("客户端更新成功!")</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/routes/controllers/add-route-modal-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Route created\!\'\)</target>
+                <expect>MessageService.success('路由创建成功!')</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/routes/controllers/route-health-checks-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\"Health Checks \" + \(\$scope\.routeHC\.active \? \'enabled\' \: \'disabled\'\) \+ \" \"\)</target>
+                <expect>MessageService.success("安全检查 " + ($scope.routeHC.active ? '开启' : '关闭') + " ")</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/dashboard/02_dashboard-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'New node created successfully\'\)\;</target>
+                <expect>MessageService.success('新节点创建成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/routes/controllers/route-health-checks-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\"Route health checks updated\!\"\)</target>
+                <expect>MessageService.success("路由健康检查更新!")</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/routes/controllers/route-details-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Route updated successfully\!\'\)</target>
+                <expect>MessageService.success('路由更新成功!')</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/plugins/add-plugin-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Plugin added successfully\!\'\)</target>
+                <expect>MessageService.success('插件添加成功!')</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/upstreams/edit-upstream-details-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Upstream updated successfully\'\)\;</target>
+                <expect>MessageService.success('上行路由更新成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/snapshots/controllers/snapshots-scheduled-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\"Scheduled job \" \+ \( item.active \? \"started\" \: \"stopped\"\)\)\;</target>
+                <expect>MessageService.success("定时任务 " + ( item.active ? "开启" : "停止"));</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/upstreams/targets/edit-upstream-targets-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\"Target added successfully\!\"\)</target>
+                <expect>MessageService.success("目标添加成功!")</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[MessageService\.success\(\`Target \$\{target\.target\} is set to \$\{healthy \? \'healthy\' \: \'unhealthy\'\}\`\)\;]]></target>
+                <expect><![CDATA[MessageService\.success\(\`目标 \$\{target\.target\} 设置 \$\{healthy \? \'健康\' \: \'不健康\'\}\`\)\;]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/services/controllers/add-service-modal-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Service created\!\'\)</target>
+                <expect>MessageService.success('服务创建成功!')</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/plugins/edit-plugin-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'\"\' \+ \_plugin\.name + '" plugin updated successfully\!\'\)\;</target>
+                <expect>MessageService.success('"' + _plugin.name + '" 插件更新成功!');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/connections/connections-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Settings updated successfully\!\'\)</target>
+                <expect>MessageService.success('系统设置更新成功!')</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\'Connection deleted successfully\'\)\;</target>
+                <expect>MessageService.success('连接删除成功');</expect>
+            </replace>
+            <replace>
+                <target><![CDATA[MessageService\.success\(\"Health Checks \" \+ \(\$scope\.serviceHC\.active \? \'enabled\' \: \'disabled\'\) \+ \" \"\)]]></target>
+                <expect><![CDATA[MessageService\.success\(\"安全检查 \" \+ \(\$scope\.serviceHC\.active \? \'开启\' \: \'关闭\'\) \+ \" \"\)]]></expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\'Active node version updated\'\)\;</target>
+                <expect>MessageService.success('活动节点版本更新');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/snapshots/controllers/snapshots-list-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Snapshot Created\!\'\)\;</target>
+                <expect>MessageService.success('镜像创建成功!');</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\'Snapshot deleted successfully\'\)\;</target>
+                <expect>MessageService.success('镜像删除成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/settings/settings-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\"Transport updated\!\"\)</target>
+                <expect>MessageService.success("转换更新成功!")</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.success\(\"Settings updated\!\"\)</target>
+                <expect>MessageService.success("系统设置更新成功!")</expect>
+            </replace>
+            <replace>
+                <target>MessageService\.error\(\"Failed to update settings\!\"\)</target>
+                <expect>MessageService.error("系统设置更新失败!")</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/services/controllers/service-details-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Service updated successfully\!\'\)\;</target>
+                <expect>MessageService.success('服务更新成功!');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/consumers/consumers-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\"Consumer created successfully\!\"\)</target>
+                <expect>MessageService.success("消费者创建成功!")</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/connections/create-connection-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'New node created successfully\'\)\;</target>
+                <expect>MessageService.success('新节点创建成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/upstreams/add-upstream-modal-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'New upstream created successfully\'\)\;</target>
+                <expect>MessageService.success('新上行流量创建成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/services/controllers/service-health-checks-controller.js</name>
+        <item>
+            <replace>
+                <target><![CDATA[MessageService\.success\(\"Health Checks \" \+ \(\$scope\.serviceHC\.active \? \'enabled\' \: \'disabled\'\) \+ \" \"\)]]></target>
+                <expect><![CDATA[MessageService\.success\(\"安全检查 \" \+ \(\$scope\.serviceHC\.active \? \'开启\' \: \'关闭\'\) \+ \" \"\)]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/consumers/groups/manage-groups-modal-controllers.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'New group created successfully\'\)\;</target>
+                <expect>MessageService.success('新分组创建成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/connections/edit-connection-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Node updated successfully\'\)\;</target>
+                <expect>MessageService.success('节点更新成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/consumers/details/consumer-details-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\"Consumer updated successfully\!\"\)</target>
+                <expect>MessageService.success("消费者更新成功!")</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/upstreams/update-upstream-modal-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'Upstream updated successfully\'\)\;</target>
+                <expect>MessageService.success('上行流更新成功');</expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/healthchecks/healthchecks-controller.js</name>
+        <item>
+            <replace>
+                <target>MessageService\.success\(\'HealthCheck deleted successfully\'\)\;</target>
+                <expect>MessageService.success('安全检查删除成功');</expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/services.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Add New Service$]]></target>
+                <expect><![CDATA[新增服务]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Delete$]]></target>
+                <expect><![CDATA[删除]]></expect>
+            </replace>
+        </item>
+    </file>
+    <file>
+        <name>js/app/services/views/add-service-certificates-modal.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Add Certificates to]]></target>
+                <expect><![CDATA[添加证书至]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Submit Certificates$]]></target>
+                <expect><![CDATA[确认证书]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Certificate</label>]]></target>
+                <expect><![CDATA[>证书</label>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Upload the certificate file]]></target>
+                <expect><![CDATA[上传证书]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[>Key</label>]]></target>
+                <expect><![CDATA[>秘钥</label>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Upload the certificate .key file]]></target>
+                <expect><![CDATA[上传证书.key文件]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Server Name Indications]]></target>
+                <expect><![CDATA[指引域名站点]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[A comma separated list of Server Name Indications. ex: ]]></target>
+                <expect><![CDATA[服务器名称指示的逗号分隔列表.例如:]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/add-service-modal.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Create Service$]]></target>
+                <expect><![CDATA[创建服务]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Submit Service$]]></target>
+                <expect><![CDATA[确认服务]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/add-service-plugin-modal.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+ADD PLUGIN$]]></target>
+                <expect><![CDATA[添加插件]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/service-consumers.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Eligible Consumers$]]></target>
+                <expect><![CDATA[授权消费者]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[List of consumers with access, based on ACLs & Auth plugins]]></target>
+                <expect><![CDATA[基于acl和Auth插件的具有访问权限的使用者列表]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[This service is neither Access Controlled or secured with an Authentication plugin.]]></target>
+                <expect><![CDATA[此服务既不受访问控制，也不受身份验证插件的保护。]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Delete$]]></target>
+                <expect><![CDATA[删除]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[No data found...]]></target>
+                <expect><![CDATA[无相关数据...]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[Loading consumers...]]></target>
+                <expect><![CDATA[加载中...]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/service-details.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Service details$]]></target>
+                <expect><![CDATA[服务详情]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Submit changes$]]></target>
+                <expect><![CDATA[确认更改]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/service-health-checks.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Health Checks$]]></target>
+                <expect><![CDATA[健康检查]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/service-plugins.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Assigned plugins$]]></target>
+                <expect><![CDATA[已分配插件]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+add plugin$]]></target>
+                <expect><![CDATA[添加插件]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+delete$]]></target>
+                <expect><![CDATA[删除]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[no data found...]]></target>
+                <expect><![CDATA[无相关数据...]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/services/views/service-routes.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Routes$]]></target>
+                <expect><![CDATA[服务路由]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+edit$]]></target>
+                <expect><![CDATA[修改]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+add route$]]></target>
+                <expect><![CDATA[添加路由]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+delete]]></target>
+                <expect><![CDATA[删除]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[no data found...]]></target>
+                <expect><![CDATA[无相关数据...]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/settings/configure-integration-modal.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Configure]]></target>
+                <expect><![CDATA[配置]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+submit changes$]]></target>
+                <expect><![CDATA[确认修改]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/settings/configure-transport-modal.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Configure]]></target>
+                <expect><![CDATA[配置]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+submit changes$]]></target>
+                <expect><![CDATA[确认修改]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/settings/index.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+General settings]]></target>
+                <expect><![CDATA[常规配置]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Dashboard refresh interval$]]></target>
+                <expect><![CDATA[首页统计更新周期]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[The interval in milliseconds at which the Dashboard data will refresh. If set to 0, polling will be disabled.]]></target>
+                <expect><![CDATA[首页统计刷新的间隔（毫秒）。如果设置为0，将禁用轮询。]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Sign up restrictions$]]></target>
+                <expect><![CDATA[注册限制]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Allow users to sign up\.$]]></target>
+                <expect><![CDATA[允许用户注册]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[If enabled, users will be allowed to sign up.]]></target>
+                <expect><![CDATA[如果启用，将允许用户注册。]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Send activation email\.$]]></target>
+                <expect><![CDATA[发送激活邮件]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<h3>Notifications</h3>]]></target>
+                <expect><![CDATA[<h3>通知</h3>]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+User permissions$]]></target>
+                <expect><![CDATA[用户权限]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+save settings$]]></target>
+                <expect><![CDATA[保存设置]]></expect>
+            </replace>
+        </item>
+    </file>
+
+    <file>
+        <name>js/app/core/layout/partials/footer.html</name>
+        <item>
+            <replace>
+                <target><![CDATA[^\s+Connected to$]]></target>
+                <expect><![CDATA[已连接至]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[^\s+Choose connection$]]></target>
+                <expect><![CDATA[选择连接]]></expect>
+            </replace>
+            <replace>
+                <target><![CDATA[<ul class="nav navbar-nav navbar-left no-margin">]]></target>
+                <expect><![CDATA[<ul class="nav navbar-nav navbar-left no-margin"><li class="hidden-xs"><a href="https://github.com/jsonljd/konga-lang-plugin" target="_blank"><i class="fa fa-github"></i><strong class="text-success">语言插件 0.0.1</strong></a></li>]]></expect>
+            </replace>
+        </item>
+    </file>
+</root>
