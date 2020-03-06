@@ -36,8 +36,8 @@ konga的语言包，中文翻译
 ## 直接运行（使用前需要安装java，jdk或jre）
 ```
 cd /usr/konga                   #konga根目录和assets同级
-wget ...gz                      #下载语言包
-tar -xvf 语言包 -C ./lang       #解压语言包
+wget https://github.com/jsonljd/konga-lang-plugin/releases/download/1.0.0/deploy.zip                      #下载语言包
+unzip deploy.zip                #解压语言包
 npm stop                        #如果已经运行，需要先停止
 cp -R assets assets_bak         #保存原来的web文件，如果有问题可以恢复
 rm -rf .tmp                     #删除node启动的临时文件夹
@@ -48,6 +48,7 @@ npm start                       #启动konga
 ```
 
 ##  docker方式
+>   [查看语言包镜像仓库](https://hub.docker.com/r/jsonljd/konga-lang-plugin)
 ```
 mkdir dockertmp                                   #创建一个临时目录
 cd dockertmp
